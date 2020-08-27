@@ -1,0 +1,23 @@
+<main style="height: 60vh;">
+  <hr>
+  <div class="container">
+
+    <h1 class="login">Login</h1>
+
+    <form class="form-login" action="doLogin" method="POST">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Username</label>
+        <input type="text" class="form-control col-6" id="username" name="username" aria-describedby="emailHelp">
+        <small id="emailHelp" class="form-text text-muted">Never share your account with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control col-6" id="password" name="password">
+        <p><span style="color: red; font-size:20px">{{message}}</span></p>
+        <em style="color: red;"><h6>{{ error }}</h6></em>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+  </div>
+</main>

@@ -1,0 +1,121 @@
+.img{
+    margin: 20px;
+    width: 100%;
+    height: 300px;
+}
+.img img{
+    height: 280px;
+    border-radius: 10px;
+    margin-left: 36%;
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
+    border-top: 1px solid rgba(77, 69, 97, 0.178);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+nav{
+    background-color: rgba(199, 162, 162, 0.795);
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    
+}
+
+nav li{
+    display: inline;
+    margin: 20px;
+    line-height: 50px;
+}
+
+nav ul{
+    padding-left: 65%;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
+nav a:hover{
+    background-color: yellow;
+    color: red;
+    border-radius: 10px;
+}
+
+.container > div{
+    border: 1px solid rgba(134, 140, 146, 0.514);
+}
+
+.side1, .side2{
+    text-align: center;
+    border: 1px solid blueviolet;
+}
+.side1{
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.side2{
+    margin-top: 5px;
+    margin-left: 149px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+/* .stitle > div {
+    background-color: brown;
+    line-height: 40px;
+} */
+.stitle h4{
+    margin: 0;
+
+}
+
+.stitle{
+    border-bottom: 1px solid red;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    color: rgba(115, 148, 170, 0.616);
+
+}
+.scontent{
+    padding-top: 10px;
+}
+main{
+    margin-top: 20px;
+}
+
+footer{
+    margin-top: 50px;
+    text-align: center;
+    border-top: 1px solid rgba(131, 121, 121, 0.459);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+footer > div {
+    margin-top: 50px;
+}
+
+
+
+.form-login{
+    position: relative;
+    left: 30%;
+}
+.login{
+
+    margin-left: 50%;
+    margin-bottom: 50px;
+}
+.header{
+    margin-top:50px;
+}
+

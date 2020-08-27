@@ -1,0 +1,70 @@
+<main>
+  <div style="position: relative; margin: 10px 50px 60px 50px;">
+    <div class="form-day">
+      <span> Select day:</span> <input type="date" name="date" min="2020-06-01" max="2022-12-31" id="date">
+    </div>
+    <div class="total">
+      <table>
+        <tr>
+          <td><strong id="totalKg">Total bill: {{bill}} Bill</strong></td>
+          <td> <strong id="totalPaid">Total money paid: {{totalPaid}} VNĐ</strong></td>
+        </tr>
+        <tr>
+          <td><strong id="totalMoney">Total money: {{totalMoney}} VNĐ </strong></td>
+          <td> <strong id="totalUnpaid">Total money unpaid: {{totalUnpaid}} VNĐ</strong></td>
+        </tr>
+      </table>
+    </div>
+    <div class="form-search">
+      <input type="search" name="search" placeholder="Input keyword">
+      <button class="btn btn-success">Search</button>
+    </div>
+  </div>
+  <div class="option-table">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Customer</th>
+          <th scope="col">Toy Code</th>
+          <th scope="col">Amount</th>
+          <th scope="col">Price-(VNĐ)</th>
+          <th scope="col">Total(VNĐ)</th>
+          <th scope="col">Paid</th>
+          <th scope="col">Update</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody id="data-query">
+        {{#if routerImport }}
+        {{#each product}}
+        <tr>
+          <th scope="row">{{this.name}}</th>
+           <td>{{this.address}}</td>
+          <td>{{this.amount}}</td>
+          <td>{{this.price}} VNĐ</td>
+          <td>{{this.total}} VNĐ</td>
+          <td>{{this.paid}}</td>
+          <td><a href="/import/update/{{this._id}}">Update</a></td>
+          <td><a href="#" class="delete" data-setname="{{this.name}}" data-setid="{{this._id}}"
+              onclick="dele('{{this.name}}', '{{this._id}}')">Delete</a></td>
+        </tr>
+        {{/each}}
+        {{ else }}
+        {{#each product}}
+        <tr>
+          <th scope="row">{{this.name}}</th>
+           <td>{{this.address}}</td>
+          <td>{{this.amount}}</td>
+          <td>{{this.price}} VNĐ</td>
+          <td>{{this.total}} VNĐ</td>
+          <td>{{this.paid}}</td>
+          <td><a href="/export/update/{{this._id}}">Update</a></td>
+          <td><a href="#" class="delete" data-setname="{{this.name}}" data-setid="{{this._id}}"
+              onclick="dele('{{this.name}}', '{{this._id}}')">Delete</a></td>
+        </tr>
+        {{/each}}
+        {{/if}}
+      </tbody>
+    </table>
+  </div>
+</main>

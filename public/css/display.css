@@ -1,0 +1,27 @@
+.option-table{
+    margin: 50px;
+}
+
+.form-search{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+input [type=search]{
+    margin-left: 1000px;
+}
+.total{
+    border: 1px solid rgba(117, 109, 187, 0.575);
+    position: absolute;
+    top: 0%;
+    left: 30%;
+    padding: 10px;
+}
+
+.total td{
+    padding-left: 20px;
+}
+main{
+    height: 55vh;
+}
